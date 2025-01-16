@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
-import { definitionEnvironmentImpact } from "../utils/environment";
-import { imageAnimation } from "../utils/motionVariant";
 import { motion } from "motion/react";
+import { useState, useEffect } from "react";
+import { imageAnimation } from "../utils/motionVariant";
+import { definitionEnvironmentImpact } from "../utils/environment";
 import plantImage from "../assets/plant.svg";
 
 export default function Header() {
@@ -16,21 +16,21 @@ export default function Header() {
   useEffect(() => {
     const interval = setInterval(() => {
       setImpact(definitionEnvironmentImpact[getRandomInt()]);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <header className="max-w-md mx-auto sm:max-w-lg">
+    <header className="font-plex max-w-md mx-auto sm:max-w-lg">
       <motion.img
         animate={imageAnimation}
         src={plantImage}
         alt="Plant"
         className="w-24 mx-auto mt-12 origin-bottom-left sm:w-32 sm:mt-16"
       />
-      <h1 className="text-3xl font-plex tracking-tight font-semibold text-center mt-4 sm:text-4xl">
-        Environmental Impact
+      <h1 className="text-4xl tracking-tight font-semibold text-center mt-4 sm:text-4xl">
+        Environmental Impacts
       </h1>
       <p className="font-inter text-sm text-center mt-2 tracking-wide leading-tight sm:text-base sm:leading-tight">
         {impact}

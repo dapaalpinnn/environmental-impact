@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import { textAnimation } from "../utils/motionVariant";
 import { environmentImpactItems } from "../utils/environment";
 import TabButton from "./atoms/TabButton";
-import { textAnimation } from "../utils/motionVariant";
 
 export default function InteractiveTabs() {
   const [tabContent, setTabContent] = useState("Select a statistic!");
@@ -12,7 +12,7 @@ export default function InteractiveTabs() {
   }
 
   return (
-    <main className="font-inter max-w-md mx-auto my-4 p-4 rounded-xl sm:max-w-lg sm:px-0">
+    <section className="font-inter max-w-md mx-auto my-4 p-4 rounded-xl sm:max-w-lg sm:px-0">
       <h1 className="text-xl text-slate-800 font-semibold sm:text-3xl">
         Statistic
       </h1>
@@ -27,7 +27,7 @@ export default function InteractiveTabs() {
           </TabButton>
         ))}
       </div>
-      <div className="mt-4 p-4 ring-1 h-24 ring-slate-400 rounded-lg sm:mt-6">
+      <div className="mt-4 p-4 ring-1 ring-slate-400 rounded-lg sm:mt-6">
         <motion.p
           className="text-sm text-slate-700 sm:text-base"
           key={tabContent}
@@ -36,6 +36,6 @@ export default function InteractiveTabs() {
           {tabContent}
         </motion.p>
       </div>
-    </main>
+    </section>
   );
 }

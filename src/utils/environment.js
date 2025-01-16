@@ -8,14 +8,16 @@ export const environmentImpactItems = [
     title: "Deforestation",
     description:
       "Large-scale clearing of forests leads to habitat loss, reduced biodiversity, and increased greenhouse gases.",
-    statistic: "Approximately 15 billion trees are cut down every year.",
+    statistic:
+      "Approximately 15 billion trees are cut down every year, which equates to a loss of over 10 million hectares of forest annually, significantly impacting carbon storage and biodiversity.",
     imageSource: deforestation,
   },
   {
     title: "Pollution",
     description:
       "Emissions from industries and vehicles contribute to air pollution, affecting health and contributing to global warming.",
-    statistic: "Air pollution causes 7 million deaths annually worldwide.",
+    statistic:
+      "Air pollution causes 7 million deaths annually worldwide, with 90% of the global population breathing polluted air, exceeding WHO safety guidelines.",
     imageSource: pollution,
   },
   {
@@ -23,7 +25,7 @@ export const environmentImpactItems = [
     description:
       "Improper disposal of plastic waste pollutes oceans and harms marine life.",
     statistic:
-      "Over 8 million metric tons of plastic enter the oceans every year.",
+      "Over 8 million metric tons of plastic enter the oceans every year, with plastics accounting for 80% of all marine debris found from surface waters to deep-sea sediments.",
     imageSource: plastic,
   },
   {
@@ -31,7 +33,7 @@ export const environmentImpactItems = [
     description:
       "Rising global temperatures lead to extreme weather, rising sea levels, and ecological disruptions.",
     statistic:
-      "The Earth's temperature has increased by 1.2°C since the pre-industrial era.",
+      "The Earth's temperature has increased by 1.2°C since the pre-industrial era, contributing to a 21–24 cm rise in sea levels since 1880 and an increase in the frequency of extreme weather events.",
     imageSource: climate,
   },
 ];
