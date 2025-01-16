@@ -12,8 +12,10 @@ export default function InteractiveTabs() {
   }
 
   return (
-    <main className="font-inter max-w-md mx-auto my-4 p-4  rounded-xl">
-      <h1 className="text-xl text-slate-800 font-semibold">Statistic</h1>
+    <main className="font-inter max-w-md mx-auto my-4 p-4 rounded-xl sm:max-w-lg sm:px-0">
+      <h1 className="text-xl text-slate-800 font-semibold sm:text-3xl">
+        Statistic
+      </h1>
       <div className="flex gap-2 mt-4">
         {environmentImpactItems.map((item) => (
           <TabButton
@@ -25,9 +27,9 @@ export default function InteractiveTabs() {
           </TabButton>
         ))}
       </div>
-      <div className="mt-4 p-4 ring-1 h-20 ring-slate-400 rounded-lg">
+      <div className="mt-4 p-4 ring-1 h-24 ring-slate-400 rounded-lg sm:mt-6">
         <motion.p
-          className="text-sm text-slate-700"
+          className="text-sm text-slate-700 sm:text-base"
           key={tabContent}
           {...textAnimation}
         >
