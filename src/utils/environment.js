@@ -2,6 +2,8 @@ import deforestation from "../assets/deforestation.svg";
 import pollution from "../assets/pollution.svg";
 import plastic from "../assets/plastic.svg";
 import climate from "../assets/climate.svg";
+import waterScarcity from "../assets/water-scarcity.svg";
+import overfishing from "../assets/over-fishing.svg";
 
 export const environmentImpactItems = [
   {
@@ -35,6 +37,22 @@ export const environmentImpactItems = [
     statistic:
       "The Earth's temperature has increased by 1.2°C since the pre-industrial era, contributing to a 21–24 cm rise in sea levels since 1880 and an increase in the frequency of extreme weather events.",
     imageSource: climate,
+  },
+  {
+    title: "Water Scarcity",
+    description:
+      "Freshwater resources are depleting due to overuse and pollution, leading to shortages for both humans and wildlife.",
+    statistic:
+      "By 2025, nearly two-thirds of the global population could face water scarcity, with agriculture being the largest user of freshwater resources.",
+    imageSource: waterScarcity,
+  },
+  {
+    title: "Overfishing",
+    description:
+      "Overfishing depletes fish populations, disrupting marine ecosystems and threatening food security.",
+    statistic:
+      "About 33% of the world’s fish stocks are overfished, with marine biodiversity suffering due to unregulated fishing practices.",
+    imageSource: overfishing,
   },
 ];
 

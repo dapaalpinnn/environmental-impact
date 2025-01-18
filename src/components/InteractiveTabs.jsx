@@ -16,7 +16,10 @@ export default function InteractiveTabs() {
       <h1 className="text-xl text-slate-800 font-semibold sm:text-3xl">
         Statistic
       </h1>
-      <div className="flex gap-2 mt-4">
+      <p className="text-sm tracking-wide mt-2 text-green-600">
+        * Choose a statistic to learn about environmental impacts.
+      </p>
+      <div className="grid grid-cols-2 gap-2 mt-4">
         {environmentImpactItems.map((item) => (
           <TabButton
             key={item.statistic}
@@ -27,7 +30,7 @@ export default function InteractiveTabs() {
           </TabButton>
         ))}
       </div>
-      <div className="mt-4 p-4 ring-1 ring-slate-400 rounded-lg sm:mt-6">
+      <div className="mt-4 p-4 rounded-lg sm:mt-6 bg-slate-50">
         <motion.p
           className="text-sm text-slate-700 sm:text-base"
           key={tabContent}

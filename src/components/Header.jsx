@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 import { imageAnimation } from "../utils/motionVariant";
 import { definitionEnvironmentImpact } from "../utils/environment";
+import GuestName from "./molecules/GuestName";
 import plantImage from "../assets/plant.svg";
 
 export default function Header() {
@@ -23,11 +24,12 @@ export default function Header() {
 
   return (
     <header className="font-plex max-w-md mx-auto sm:max-w-lg">
+      <GuestName />
       <motion.img
         animate={imageAnimation}
         src={plantImage}
         alt="Plant"
-        className="w-24 mx-auto mt-12 origin-bottom-left sm:w-32 sm:mt-16"
+        className="w-24 mx-auto mt-16 origin-bottom-left sm:w-32 sm:mt-16"
       />
       <h1 className="text-4xl tracking-tight font-semibold text-center mt-4 sm:text-4xl">
         Environmental Impacts
