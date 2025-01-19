@@ -1,15 +1,15 @@
 export default function TabButton({
   children,
   isSelected = false,
-  color = "bg-slate-50 hover:bg-slate-100",
+  color = "bg-slate-200 hover:ring-1 hover:ring-slate-500",
   ...props
 }) {
   return (
     <button
       {...props}
       className={`${
-        isSelected ? "bg-black text-slate-100" : color
-      } px-4 py-2 text-slate-500 rounded-xl font-medium text-sm sm:text-base sm:px-6`}
+        isSelected ? "bg-slate-300 text-black" : color
+      } px-4 py-2 ring-1 ring-slate-400 text-slate-500 rounded-xl font-medium text-sm sm:text-base sm:px-6`}
     >
       {children}
     </button>
