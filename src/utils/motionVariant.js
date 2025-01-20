@@ -9,8 +9,15 @@ export const imageAnimation = {
 };
 
 export const textAnimation = {
-  initial: { opacity: 0.5, y: 20 },
+  initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -10 },
   transition: { duration: 0.5 },
+};
+
+export const modalAnimation = {
+  initial: { opacity: 1, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -10 },
+  transition: { duration: 0.8 },
 };

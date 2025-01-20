@@ -23,7 +23,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="font-plex max-w-md mx-auto sm:max-w-lg">
+    <header className="font-plex max-w-sm mx-auto sm:max-w-lg">
       <GuestName />
       <motion.img
         animate={imageAnimation}
