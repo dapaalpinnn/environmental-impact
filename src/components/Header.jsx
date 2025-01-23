@@ -23,7 +23,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="font-plex max-w-sm mx-auto sm:max-w-lg">
+    <header className="max-w-xs mx-auto sm:max-w-lg">
       <GuestName />
       <motion.img
         animate={imageAnimation}
@@ -31,12 +31,14 @@ export default function Header() {
         alt="Plant"
         className="w-24 mx-auto mt-16 origin-bottom-left sm:w-32 sm:mt-16"
       />
-      <h1 className="text-4xl tracking-tight font-semibold text-center mt-4 sm:text-4xl">
-        Environmental Impacts
-      </h1>
-      <p className="font-inter text-sm text-center mt-2 tracking-wide leading-tight sm:text-base sm:leading-tight">
-        {impact}
-      </p>
+      <div className="space-y-4 mt-8">
+        <h1 className="font-manrope text-5xl tracking-tight font-semibold text-center sm:text-4xl">
+          Environmental Impacts
+        </h1>
+        <p className="font-inter text-sm text-center leading-tight sm:text-base sm:leading-tight">
+          {impact}
+        </p>
+      </div>
     </header>
   );
 }

@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        plex: ["IBM Plex Serif", "serif"],
-        inter: ["Inter Tight", "serif"],
+        inter: ["Inter", "serif"],
+        manrope: ["Manrope", "serif"],
       },
     },
   },

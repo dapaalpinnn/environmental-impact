@@ -21,14 +21,14 @@ export default function InteractiveTabs() {
         />
       )}
 
-      <section className="font-inter max-w-md mx-auto my-4 p-4 rounded-xl sm:max-w-lg sm:px-0">
+      <section className="font-inter max-w-xs mx-auto my-12">
         <h1 className="text-xl text-slate-800 font-semibold sm:text-3xl">
           Statistic
         </h1>
         <p className="text-sm tracking-wide mt-2 text-green-600">
-          * Choose a statistic to learn about environmental impacts.
+          * Choose a statistic.
         </p>
-        <div className="grid grid-cols-2 gap-2 mt-4">
+        <div className="grid grid-cols-2 gap-3 mt-4">
           {environmentImpactItems.map((item) => (
             <TabButton
               key={item.statistic}
