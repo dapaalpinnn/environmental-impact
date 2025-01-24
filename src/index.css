@@ -4,3 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .button__darkmode {
+    @apply font-manrope text-sm font-medium text-slate-700 ring-1 ring-slate-700 hover:ring-slate-900 px-4 py-1 rounded-xl hover:text-slate-900 dark:bg-black dark:text-slate-400 dark:ring-slate-400 dark:hover:ring-slate-200 dark:hover:text-stone-200;
+  }
+}
