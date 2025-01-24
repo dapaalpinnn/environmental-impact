@@ -21,12 +21,13 @@ export default function InteractiveTabs() {
         />
       )}
 
-      <section className="font-inter max-w-xs mx-auto py-12">
-        <h1 className="text-xl text-slate-800 font-semibold sm:text-3xl dark:text-slate-100">
+      <section className="font-inter max-w-sm px-4 py-8 mx-auto">
+        <h1 className="text-3xl text-stone-800 font-semibold sm:text-5xl dark:text-stone-100">
           Statistic
         </h1>
-        <p className="text-sm tracking-wide mt-2 text-green-600 dark:text-green-400">
-          * Choose a statistic.
+        <p className="text-sm tracking-tight mt-2 text-stone-600 dark:text-stone-300">
+          Over the past century, human activities have significantly accelerated
+          environmental degradation.
         </p>
         <div className="grid grid-cols-2 gap-3 mt-4">
           {environmentImpactItems.map((item) => (

@@ -21,3 +21,13 @@ export const modalAnimation = {
   exit: { opacity: 0, y: -10 },
   transition: { duration: 0.8 },
 };
+
+export const descriptionAnimation = {
+  hidden: { opacity: 0, y: 10 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeInOut" } },
+  exit: {
+    opacity: 0,
+    y: -10,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+};
