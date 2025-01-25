@@ -1,3 +1,6 @@
+import { motion } from "motion/react";
+import { fadeIn } from "../utils/motionVariant";
+
 export default function CoreConcepts({
   imageSource,
   title,
@@ -5,7 +8,10 @@ export default function CoreConcepts({
   ...props
 }) {
   return (
-    <section className="max-w-sm mx-auto text-center mt-4 rounded-xl p-6 ring-1 ring-slate-400 hover:ring-slate-600 sm:text-base dark:ring-slate-600 dark:hover:ring-slate-400">
+    <motion.section
+      {...fadeIn}
+      className="max-w-sm mx-auto text-center mt-4 rounded-xl p-6 ring-1 ring-slate-400 hover:ring-slate-600 sm:text-base dark:ring-slate-600 dark:hover:ring-slate-400"
+    >
       <img
         src={imageSource}
         {...props}
@@ -17,6 +23,6 @@ export default function CoreConcepts({
       <p className="mt-2 leading-tight text-slate-600 sm:leading-tight dark:text-stone-300">
         {description}
       </p>
-    </section>
+    </motion.section>
   );
 }

@@ -1,5 +1,7 @@
 import { definitionEnvironmentImpact } from "../utils/environment";
+import { fadeIn } from "../utils/motionVariant";
 import { useState, useEffect } from "react";
+import { motion } from "motion/react";
 import DescriptionAnimation from "./atoms/DescriptionAnimation";
 import globalWarmingProtest from "../assets/global-warming-protest.webp";
 
@@ -43,10 +45,13 @@ export default function Header() {
 
   return (
     <header className="max-w-sm p-4 mx-auto pt-16">
-      <div className="mt-8">
-        <h1 className="font-manrope text-4xl tracking-tight font-semibold sm:text-4xl">
+      <motion.div {...fadeIn} className="mt-8">
+        <motion.h1
+          {...fadeIn}
+          className="font-manrope text-4xl tracking-tight font-semibold sm:text-4xl"
+        >
           Understanding Environmental Impact: Challenges and Solutions
-        </h1>
+        </motion.h1>
         <DescriptionAnimation keyword={impact} className="mt-5">
           {impact}
         </DescriptionAnimation>
@@ -56,12 +61,13 @@ export default function Header() {
         >
           {darkMode ? "Light" : "Dark"}
         </button>
-        <img
-          src={globalWarmingProtest}
-          alt="Global Warming Protest"
-          className="mt-16 rounded-lg "
-        />
-      </div>
+      </motion.div>
+      <motion.img
+        {...fadeIn}
+        src={globalWarmingProtest}
+        alt="Global Warming Protest"
+        className="mt-16 rounded-lg "
+      />
     </header>
   );
 }
